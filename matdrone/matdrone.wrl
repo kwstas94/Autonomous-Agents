@@ -1,0 +1,371 @@
+#VRML V2.0 utf8
+# Copyright 1998-2011 HUMUSOFT s.r.o. and The MathWorks, Inc.
+
+EXTERNPROTO Grid_101x101 [
+  exposedField SFVec3f position
+  exposedField SFRotation rotation
+  exposedField SFVec3f scale
+  exposedField SFColor color
+  exposedField SFInt32 visible
+]
+"matdrone_files/objects/Components/Grids/Grid_101x101.wrl" 
+
+Background {
+  skyColor 0.9 0.9 0.9
+  groundColor 0.9 0.9 0.9
+}
+DEF XZ_Grid Grid_101x101 {
+}
+Transform {
+  translation 20 20 20
+  rotation 0 1 0 0.7854
+  children Viewpoint {
+    description "Perspective View"
+    orientation 1 0 0 -0.5
+    fieldOfView 0.5
+  }
+}
+DEF SDF_drone500_Transform Transform {
+  scale 2 2 2
+  children DEF link_body_1 Transform {
+    translation 0 0 -0
+    rotation 1 0 -0 0
+    children [
+      DEF link_body_1_1 Transform {
+        translation 0 0 -0
+        rotation 1 0 -0 0
+        children Shape {
+          appearance Appearance {
+            material Material {
+            }
+          }
+          geometry Box {
+            size 3.6 0.2 0.2
+          }
+        }
+      }
+      DEF joint_body_joint Transform {
+        translation 0 0 -0
+        rotation 1 0 -0 0
+        children DEF axis_body_joint Transform {
+          translation 0 0 -0
+          rotation 0 1 -0 0
+          children DEF link_body_2 Transform {
+            rotation 1 0 -0 0
+            children [
+              DEF link_body_2_1 Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children Shape {
+                  appearance Appearance {
+                    material Material {
+                    }
+                  }
+                  geometry Box {
+                    size 0.2 0.2 3.6
+                  }
+                }
+              }
+              DEF joint_r3_joint Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children DEF axis_r3_joint Transform {
+                  translation 0 0.14 1.75
+                  rotation 0 1 -0 0
+                  children DEF link_rod_3 Transform {
+                    rotation 1 0 -0 0
+                    children [
+                      DEF link_rod_3_1 Transform {
+                        translation 0 0 -0
+                        rotation 1 0 -0 0
+                        children Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Box {
+                            size 0.02 0.08 0.02
+                          }
+                        }
+                      }
+                      DEF joint_b5_joint Transform {
+                        translation 0 0 -0
+                        rotation 1 0 -0 0
+                        children DEF axis_b5_joint Transform {
+                          translation 0 0.04 -0
+                          rotation 1 0 -0 0
+                          children DEF link_blade_5 Transform {
+                            rotation 1 0 -0 0
+                            children DEF link_blade_5_1 Transform {
+                              translation 0 0 -0.5
+                              rotation 1 0 -0 0
+                              children Shape {
+                                appearance Appearance {
+                                  material Material {
+                                  }
+                                }
+                                geometry Box {
+                                  size 0.2 0.01 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      DEF joint_b6_joint Transform {
+                        translation 0 0 -0
+                        rotation 1 0 -0 0
+                        children DEF axis_b6_joint Transform {
+                          translation 0 0.04 -0
+                          rotation 1 0 -0 0
+                          children DEF link_blade_6 Transform {
+                            rotation 0 1 -0 3.14159
+                            children DEF link_blade_6_1 Transform {
+                              translation 0 0 -0.5
+                              rotation 1 0 -0 0
+                              children Shape {
+                                appearance Appearance {
+                                  material Material {
+                                  }
+                                }
+                                geometry Box {
+                                  size 0.2 0.01 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+              DEF joint_r4_joint Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children DEF axis_r4_joint Transform {
+                  translation 0 0.14 -1.75
+                  rotation 0 1 -0 0
+                  children DEF link_rod_4 Transform {
+                    rotation 1 0 -0 0
+                    children [
+                      DEF link_rod_4_1 Transform {
+                        translation 0 0 -0
+                        rotation 1 0 -0 0
+                        children Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Box {
+                            size 0.02 0.08 0.02
+                          }
+                        }
+                      }
+                      DEF joint_b7_joint Transform {
+                        translation 0 0 -0
+                        rotation 1 0 -0 0
+                        children DEF axis_b7_joint Transform {
+                          translation 0 0.04 -0
+                          rotation 1 0 -0 0
+                          children DEF link_blade_7 Transform {
+                            rotation 1 0 -0 0
+                            children DEF link_blade_7_1 Transform {
+                              translation 0 0 -0.5
+                              rotation 1 0 -0 0
+                              children Shape {
+                                appearance Appearance {
+                                  material Material {
+                                  }
+                                }
+                                geometry Box {
+                                  size 0.2 0.01 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      DEF joint_b8_joint Transform {
+                        translation 0 0 -0
+                        rotation 1 0 -0 0
+                        children DEF axis_b8_joint Transform {
+                          translation 0 0.04 -0
+                          rotation 1 0 -0 0
+                          children DEF link_blade_8 Transform {
+                            rotation 0 1 -0 3.14159
+                            children DEF link_blade_8_1 Transform {
+                              translation 0 0 -0.5
+                              rotation 1 0 -0 0
+                              children Shape {
+                                appearance Appearance {
+                                  material Material {
+                                  }
+                                }
+                                geometry Box {
+                                  size 0.2 0.01 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+      DEF joint_r1_joint Transform {
+        translation 0 0 -0
+        rotation 1 0 -0 0
+        children DEF axis_r1_joint Transform {
+          translation -1.75 0.14 -0
+          rotation 0 -1 -0 0
+          children DEF link_rod_1 Transform {
+            rotation 1 0 -0 0
+            children [
+              DEF link_rod_1_1 Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children Shape {
+                  appearance Appearance {
+                    material Material {
+                    }
+                  }
+                  geometry Box {
+                    size 0.02 0.08 0.02
+                  }
+                }
+              }
+              DEF joint_b1_joint Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children DEF axis_b1_joint Transform {
+                  translation 0 0.04 -0
+                  rotation 1 0 -0 0
+                  children DEF link_blade_1 Transform {
+                    rotation 1 0 -0 0
+                    children DEF link_blade_1_1 Transform {
+                      translation 0 0 -0.5
+                      rotation 1 0 -0 0
+                      children Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Box {
+                          size 0.2 0.01 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              DEF joint_b2_joint Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children DEF axis_b2_joint Transform {
+                  translation 0 0.04 -0
+                  rotation 1 0 -0 0
+                  children DEF link_blade_2 Transform {
+                    rotation 0 1 -0 3.14159
+                    children DEF link_blade_2_1 Transform {
+                      translation 0 0 -0.5
+                      rotation 1 0 -0 0
+                      children Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Box {
+                          size 0.2 0.01 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+      DEF joint_r2_joint Transform {
+        translation 0 0 -0
+        rotation 1 0 -0 0
+        children DEF axis_r2_joint Transform {
+          translation 1.75 0.14 -0
+          rotation 0 -1 -0 0
+          children DEF link_rod_2 Transform {
+            rotation 1 0 -0 0
+            children [
+              DEF link_rod_2_1 Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children Shape {
+                  appearance Appearance {
+                    material Material {
+                    }
+                  }
+                  geometry Box {
+                    size 0.02 0.08 0.02
+                  }
+                }
+              }
+              DEF joint_b3_joint Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children DEF axis_b3_joint Transform {
+                  translation 0 0.04 -0
+                  rotation 1 0 -0 0
+                  children DEF link_blade_3 Transform {
+                    rotation 1 0 -0 0
+                    children DEF link_blade_3_1 Transform {
+                      translation 0 0 -0.5
+                      rotation 1 0 -0 0
+                      children Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Box {
+                          size 0.2 0.01 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              DEF joint_b4_joint Transform {
+                translation 0 0 -0
+                rotation 1 0 -0 0
+                children DEF axis_b4_joint Transform {
+                  translation 0 0.04 -0
+                  rotation 1 0 -0 0
+                  children DEF link_blade_4 Transform {
+                    rotation 0 1 -0 3.14159
+                    children DEF link_blade_4_1 Transform {
+                      translation 0 0 -0.5
+                      rotation 1 0 -0 0
+                      children Shape {
+                        appearance Appearance {
+                          material Material {
+                          }
+                        }
+                        geometry Box {
+                          size 0.2 0.01 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
